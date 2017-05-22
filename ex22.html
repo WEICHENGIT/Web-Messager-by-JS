@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+    <title>过来我们聊聊</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive HTML5 website landing page for developers and startups">
+
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <![endif]-->
+    <script src="exercise22.js">
+    </script>
+</head>
+
+<body>
+    <!-- ******HEADER****** -->
+    <header id="header" class="header">
+        <div class="container">
+            <h1 class="logo">
+                <a class="scrollto" href="#hero">
+                    <span class="logo-icon-wrapper"><img class="logo-icon" src="assets/images/logo-icon.svg" alt="icon"></span>
+                    <span class="text"><span class="highlight">WEI</span> CHEN  -  SD203</span></a>
+            </h1><!--//logo-->
+
+        </div><!--//container-->
+    </header><!--//header-->
+
+    <div id="contact" class="contact-section">
+        <div class="container text-center">
+            <h2 class="section-title">Let's chat</h2>
+            <div class="contact-content">
+              <iframe id="ifActionResult" name="ifTmp" width="1px" height="1px" style="display: none;"></iframe>
+              <form id='formchat' name="input"  action="chat.php"  method="get" target="ifTmp">
+                <input style="color:black; width:80%; height:40px" type="text" name="phrase"
+                value="input here:" onfocus="javascript:if(this.value=='input here:')this.value='';">
+                <!-- <button onclick=setTimeout("showhistory()",1000)>Send</button> -->
+                <p><br><br><button class="btn btn-cta btn-primary" type='submit' onclick=setTimeout("showhistory()",1000)>Send</button></p>
+              </form>
+            </div>
+        </div><!--//container-->
+    </div><!--//contact-section-->
+
+    <div id="testimonials" class="testimonials-section" >
+    <!-- style="display: none" -->
+          <div align="center" class="container">
+            <a class="section-title text-center" href="javascript:showhistory()">Chatting history</a>
+            <p style="width:50%;">The chatting history will be updated by clicking the text or sending a message. Different text colors and profile pictures are used to indicated diffrent user IP. The date and time of the sent message will be shown in text frames as well.</p>
+          </div>
+        <div name="history" class="container">
+        </div><!--//container-->
+    </div><!--//testimonials-->
+
+    <footer class="footer text-center">
+        <div class="container">
+            <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
+            <small class="copyright">Copyright &copy; 2017. WEI Chen.</small>
+
+        </div><!--//container-->
+    </footer>
+
+</body>
+</html>
